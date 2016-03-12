@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors 谢志强 (594613537@qq.com)
+ * @date    2016-03-11 14:55:09
+ * @version v1.0
+ */
+ .container{
+ 	max-width:1200px; 
+ 	margin:0 auto;
+ }
+ .navbar{
+ 	position: fixed;
+ 	width: 100%;
+ 	z-index: 10;
+ 	top:0;
+ }
+ .logo{
+ 	width:200px;
+ 	height:60px;
+    float:left;
+    background:url(../images/logo.png) no-repeat;
+ }
+ .top-nav{
+ 	float:right;
+ }
+ .top-nav >li{
+ 	float:left;
+}
+.top-nav >li>a{
+ 	font-family: "Microsoft Yahei";
+ 	color:#eee;
+ 	font-size: 20px;
+ }
+ .top-nav >li>span{
+ 	display:block;
+ 	width:0px;
+ 	height:1px;
+ 	background:#0051b4;
+ 	margin-right: auto;
+ 	margin-left: auto;
+ }
+ .page1{
+ 	background: url(../images/bg3.jpg) no-repeat center center;
+ 	-mo-background-size: 100% 100%;
+ 	background-size: 100% 100%;
+ 	width:100%;
+ 	height:600px;
+ 	padding-top: 150px;
+ 	position: relative;
+ }
+.teamName>h1{
+	color:#fff;
+	font-size: 100px;
+	font-weight: 100;
+	line-height: 1.2em;
+	letter-spacing:50px;
+
+}
+.teamName>h2{
+	color:#b1b7bf;
+ 	font-family: "Microsoft Yahei";
+}
+.team-work{
+	position: absolute;
+	bottom:0;
+	height:90px;
+	padding:20px 20px;
+	width:100%;
+	text-align: center;
+	background-color: rgba(181,181,181,.6);
+}
+.team-work>div{
+	float:left;
+	width:33.3333%;
+	color:#fff;
+	font-size: 27px;
+	text-align: center;
+	line-height: 50px;
+	cursor:pointer;
+	border-right: 1px solid rgba(255,255,255,.3);
+	letter-spacing: 10px;
+}
+.team-work>div:last-child{
+	border-right: none;
+}
+
+
+/*大局*/
+.section-block {
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    color: #434a54;
+    padding-top: 120px;
+    overflow: visible;
+}
+/*标题*/
+.section-block h1 {
+    font-family: Lato,"Helvetica Neue",Arial,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+    font-size: 45px;
+}
+.section-block h3 {
+    font-family: Lato,"Helvetica Neue",Arial,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+    color: #aab2bd;
+	font-size: 24px;
+}
+.section-block h4 {
+    font-size: 25px;
+    font-weight: 200;
+    color: #5c6570;
+}
+/*旋转盒子*/
+.rolatePicBox{
+	width: 375px;
+	height: 375px;
+	background: url(../images/rolateBox.png);
+	margin:100px auto;
+	position: relative;
+}
+.rolatePic{
+	width: 275px;
+	height: 275px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -137.5px;
+	margin-top: -137.5px;
+}
+.sectionBox{
+	width: 100%;
+}
+/*悬浮文字*/
+.textunit {
+	width: 18%;
+}
+.textunit p{
+	margin-top: 10px;
+	font-size: 18px;
+}
+.textunit1 {
+    position: absolute;
+    text-align: left;
+    left: 10%;
+    bottom: 36%;
+}
+.textunit2 {
+    position: absolute;
+    text-align: left;
+    right: 9%;
+    bottom: 36%;
+}
+.textunit3 {
+    position: absolute;
+    text-align: left;
+    left: 48%;
+    bottom: -6%;
+    z-index: 2;
+}
+.textunit1::after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	right: -15px;
+	width: 4px;
+	height: 100px;
+	background-color: #dfecf0;
+}
+.textunit2::after,.textunit3::after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: -25px;
+	width: 4px;
+	height: 100px;
+	background-color: #dfecf0;
+}
+/*了解我们*/
+.joinus {
+    width: 125px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -62.5px;
+    margin-right: -25px;
+    font-size: 23px;
+    line-height: 50px;
+    border-radius: 5px;
+}
+.joinusbtn {
+    background: transparent none repeat scroll 0% 0%;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    border: 2px solid #d5d5d5;
+    border-radius: 5px;
+}
+.joinus:hover .joinusbtn{
+	color: #b5b5b5;
+	 border: 2px solid #b5b5b5;
+}
+.schoolPic{
+	width: 100%;
+}
+.footer {
+    clear: both;
+    width: 100%;
+    background: #606873;
+    height: 280px;
+    padding: 30px 0;
+}
+.link {
+    width: 300px;
+    float: left;
+    margin-left:70px;
+}
+.link p {
+    line-height: 40px;
+}
+.link-title {
+	color: #dedede;
+    font-weight: 700;
+    font-size: 24px;
+}
+.copyright {
+    float: right;
+    margin-right: 50px;
+}
+.copyright span {
+    display: inline-block;
+    line-height: 40px;
+    margin-top: 180px;
+}
+.link a{
+	color:#fff;
+	font-size: 18px;
+}
+.author{
+	font-size: 18px;
+	font-weight: 300;
+}
