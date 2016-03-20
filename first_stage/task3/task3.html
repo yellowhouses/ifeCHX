@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务3 三栏式布局</title>
+</head>
+<style type="text/css" media="screen">
+.container{
+	position: relative;
+	padding: 20px;
+	background-color: #eee;
+	border: #999 solid 1px;
+	min-height: 320px;
+}
+.container::after{
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0;
+}
+.leftBox{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	width: 160px;
+	border: #999 solid 1px;
+	background: #fff;
+	padding: 20px;
+}
+.middleBox{
+	margin-left: 240px;
+	margin-right: 160px;
+	border: #999 solid 1px;
+	background: #fff;
+	padding: 20px;
+}
+.rightBox{
+	position: absolute;
+	right: 20px;
+	width: 80px;
+	top: 20px;
+	border: #999 solid 1px;
+	background: #fff;
+	padding: 20px;
+}
+.groupLogo img{
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+.name{
+	float: right;
+	width: 80px;
+	text-align: center;
+}
+.perLogo{
+	width: 80px;
+	height: 80px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.perLogo:last-child{
+	margin-bottom: 0;
+}
+p{
+	text-indent: 2em;
+}
+</style>
+<body>
+<div class="container">
+	<div class="leftBox">
+		<div class="groupLogo">
+			<img src="logo.png">
+		</div>
+		<div class="name">青朴园</div>
+	</div>
+	<div class="middleBox">
+		<div class="pageMain">
+			<h4>团队介绍</h4>
+			<p>十余载，白云苍狗，本学院IT工作从无到有，始于简而尚未成于巨，抚今追昔，筚路蓝缕，任重道远。20世纪90年代中期，电子课件制作起步；90年代末期，学院全面接入校园网，开通网站。2002年顺势成立学院多媒体与网络教学领导小组，集思广益，广纳贤才，别名 “厚朴工作室” 。<br>
+
+       <p>厚朴，燥湿除满，下气消积，消痰平喘。物欲强时心节制，才资弱处书扶掖。厚朴者，仁厚朴实也。厚朴者，HOPE也，希望也。厚朴工作室秉承“涵盖乾坤、截断众流、随波逐浪”之要旨，以智慧润泽社会，以技术补益大众，期待以爱心惠及人人，以感恩回报社会。薪火相传、潜流静深，演化为一个锐意进取的技术团队，矢志传承文化、唯美传心，发扬科技、学以致用，以期持续发展。</p>
+
+       <p>以服务教学科研为中心，工作室致力于化学信息化建设和博雅教育，推行项目管理、协同工作，实践培养复合型人才的勤工俭学模式。开展IT运维、网络管理、网站设计、平面设计、摄影非编、软件开发、IT咨询、专题培训、文化交流、环保公益等活动，承担教学科研项目，为数字化校园添砖加瓦，悉心为众排忧解难。 </p>
+		</div>
+	</div>
+	<div class="rightBox">
+		<div class="perLogo"><img src="logo1.png"></div>
+		<div class="perLogo"><img src="logo2.png"></div>
+		<div class="perLogo"><img src="logo3.png"></div>
+	</div>
+</div>
+</body>
+</html>
