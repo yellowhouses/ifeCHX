@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="format-detection" content="telephone=no">
+		<title>task11</title>
+		<link rel="stylesheet" type="type/css"  href="main.css">
+	</head>
+<body>
+    <header>
+    	<a href="#">
+    		<img src="img/back.png" alt="返回"/>
+    		返回
+    	</a>
+    	<h1>这是标题</h1>
+    </header>
+    <nav>
+    	<ul class="floatfix">
+    		<li><a href="#">导航</a></li>
+    		<li class="active"><a href="#">导航</a></li>
+    		<li><a href="#">导航</a></li>
+    		<li><a href="#">导航</a></li>
+    		<li><a href="#">导航</a></li>
+    	</ul>
+    </nav>
+    <section class="banner">
+    	<img src="img/banner.png"/>
+    </section>
+    <div class="column-wrap">
+    <section class="icon">
+    	<ul class="floatfix">
+    		<li>
+    			<div class="icon-img-content">
+    				<img src="img/text.png" alt="">
+    			</div>
+				<div class="icon-text">标签</div>
+    		</li>
+    		<li>
+    			<div class="icon-img-content">
+    				<img src="img/text.png" alt="">
+    			</div>
+				<div class="icon-text">标签</div>
+    		</li>
+    		<li>
+    			<div class="icon-img-content">
+    				<img src="img/text.png" alt="">
+    			</div>
+				<div class="icon-text">标签</div>
+    		</li>
+    		<li>
+    			<div class="icon-img-content">
+    				<img src="img/text.png" alt="">
+    			</div>
+				<div class="icon-text">标签</div>
+    		</li>
+    		<li>
+    			<div class="icon-img-content">
+    				<img src="img/text.png" alt="">
+    			</div>
+				<div class="icon-text">标签</div>
+    		</li>
+    	</ul>
+    </section>
+    <section class="column">
+    	<ul class="floatfix">
+    		<li class="column-item-containre">
+    			<img src="img/sub-1.png"/>
+    			<h1>分栏一</h1>
+    			<h2>分栏小标题</h2>
+    		</li>
+    		<li class="column-item-containre">
+    			<img src="img/sub-2.png"/>
+    			<h1>分栏一</h1>
+    			<h2>分栏小标题</h2>
+    		</li>
+    		<li class="column-item-containre">
+    			<img src="img/sub-3.png"/>
+    			<h1>分栏一</h1>
+    			<h2>分栏小标题</h2>
+    		</li>
+    	</ul>
+    </section>
+    </div>
+	<div class="bar-wrap">
+		<section class="bar-item1">
+			<h1>模块一</h1>
+			<div class="bar-content floatfix">
+				<img src="img/bar.png" alt="">
+				<ul class="floatfix">
+					<li>这是文案</li>
+					<li>这是文案</li>
+					<li>这是文案</li>
+					<li>这是文案</li>
+				</ul>
+			</div>
+			<div class="bar-content floatfix">
+				<img src="img/bar.png" alt="">
+				<ul class="floatfix">
+					<li>这是文案</li>
+					<li>这是文案</li>
+					<li>这是文案</li>
+					<li>这是文案</li>
+				</ul>
+			</div>
+		</section>
+		<section class="bar-item2">
+			<h1>模块二</h1>
+			<div class="bar-content floatfix">
+				<img src="img/bar.png" alt="">
+				<ul class="floatfix">
+					<li>这是文案</li>
+					<li>这是文案</li>
+					<li>这是文案</li>
+					<li>这是文案</li>
+				</ul>
+			</div>
+			<div class="bar-content floatfix">
+				<img src="img/bar.png" alt="">
+				<ul class="floatfix">
+					<li>这是文案</li>
+					<li>这是文案</li>
+					<li>这是文案</li>
+					<li>这是文案</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+	<div class="article">
+		<section class="article-container1 article-container">
+			<div class="article-content">
+				<img src="img/article-icon.png">
+				<h1>这是文章标题字号是22的文章标题</h1>
+				<h2>文章来源&nbsp;&nbsp;<span>6分钟前</span></h2>
+			</div>
+		</section>
+		<section class="article-container2 article-container">
+			<div class="article-content">
+				<img src="img/article-icon.png">
+				<h1>这是另一个文章标题</h1>
+				<h2>文章来源&nbsp;&nbsp;<span>7分钟前</span></h2>
+			</div>
+		</section>
+		<section class="article-container3 article-container">
+			<h1>这也是文章标题字号是22的文章标题</h1>
+			<div class="img-container floatfix">
+				<img src="img/article-icon.png">
+				<img src="img/article-icon.png">
+				<img src="img/article-icon.png">
+			</div>
+			<h2>文章来源&nbsp;&nbsp;<span>7分钟前</span></h2>
+		</section>
+	</div>
+	<script>
+	function change(){
+ 	var WindowWid=document.body.clientWidth;
+ 	var doc=document.getElementsByTagName("html")[0];
+ 	doc.style.fontSize=WindowWid/40+"px";
+ }
+ function getStyle(ele,attr){
+ 	if(ele.currentStyle){
+ 		return ele.currentStyle[attr];
+ 	}
+ 	else{
+ 		return getComputedStyle(ele)[attr];
+ 	}
+ }
+ window.addEventListener("resize", change,false);
+ window.addEventListener("load", change,false);
+</script>
+</body>
+</html>
