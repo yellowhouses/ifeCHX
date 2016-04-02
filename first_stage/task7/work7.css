@@ -1,0 +1,84 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+input, button, textarea, select {
+  *font-size: 100%;
+}
+body {
+  font: 14px/1.5 Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+  background: #eee;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:link, :visited {
+  text-decoration: none;
+}
+
+pre {
+  font-family: "Lucida Console", Consolas, "Courier New", Tahoma;
+  color: #666;
+  text-indent: 0;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+article, aside, figure, figcaption, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+figure {
+  margin: 0;
+}
+
+a, a:link, a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: #365d7b;
+}
+
+body {
+  font: 14px/1.8 Helvetica, 'Microsoft Yahei', sans-serif;
+  color: #000;
+  background: #fff;
+}
+.container {
+  margin: 0 auto;
+  width: 900px;
+}
+.floatfix {
+  *zoom: 1;
+}
+.floatfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
