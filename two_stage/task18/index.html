@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>task18</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	form{
+		margin-top:30px;
+		margin-left:10px;
+	}
+	ul{
+		list-style:none;
+	}
+	ul li{
+		float:left;
+		width:30px;
+		height:30px;
+		margin:5px;
+		background:red;
+		color:#fff;
+		text-align:center;
+		line-height:30px;
+	}
+</style>
+</head>
+<body>
+    <form>
+    	<input type="text" id="num">
+    	<input type="button" value="左侧入" id="left-in">
+    	<input type="button" value="右侧入" id="right-in">
+    	<input type="button" value="左侧出" id="left-out">
+    	<input type="button" value="右侧出" id="right-out">
+    </form>
+    <ul id="list">
+    </ul>
+    <script>
+    var num=document.getElementById("num");
+    var leftIn=document.getElementById("left-in");
+    var rightIn=document.getElementById("right-in");
+    var leftOut=document.getElementById("left-out");
+    var rightOut=document.getElementById("right-out");
+    var numList=document.getElementById("list");
+    rightIn.onclick=function(){
+    	var numItem=document.createElement("li");
+    	if(Number(num.value)){
+    		numItem.innerHTML=num.value;
+    		numList.appendChild(numItem);
+    	}else{
+    		alert("请输入数字");
+    	}
+    }
+    leftIn.onclick=function(){
+    	var numItem=document.createElement("li");
+    	if(Number(num.value)){
+    		numItem.innerHTML=num.value;
+    		listItems=numList.getElementsByTagName("li");
+    		numList.insertBefore(numItem, listItems[0]);
+    	}else{
+    		alert("请输入数字");
+    	}	
+    }
+    rightOut.onclick=function(){
+    	listItems=numList.getElementsByTagName("li");
+    	numList.removeChild(listItems[listItems.length-1]);
+    }
+   leftOut.onclick=function(){
+    	numList.removeChild(numList.firstChild);
+    }
+    </script>
+</body>
+</html>
