@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-05-01 01:06:07
+ * @version $Id$
+ */
+table {
+	margin-top: 30px;
+	margin-left: 50px;
+}
+table, table td {
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+table td {
+	text-align: center;
+	width: 80px;
+	height: 28px;
+	outline: none;
+}
+table thead {
+	background: #337AB7;
+}
+table thead tr {
+	background: #337AB7;
+}
+table thead td {
+	color: #fff;
+	font-weight: bold;
+	position: relative;
+}
+table thead span {
+	width: 9px;
+	height: 100%;
+	display: inline-block;
+	background: url('img/arrow.png') no-repeat center;
+	position: absolute;
+	right: 3px;
+	top: 1px;
+}
